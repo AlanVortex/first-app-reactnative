@@ -8,10 +8,8 @@ export default function Navigation() {
     return (
         <NavigationContainer>
             <Tab.Navigator>
-                {/* Define your screens here */}
-                {/* Example: */}
-                {/* <Tab.Screen name="Home" component={HomeScreen} /> */}
-                {/* <Tab.Screen name="Settings" component={SettingsScreen} /> */}
+                <Tab.Screen name="Login" component={() => <Text>Log in</Text>} options={{ title: 'Inicia sesión' }} />
+                <Tab.Screen name="CreateAccount" component={() => <Text>Register</Text>} options={{ title: 'Registra una cuenta' }} />
             </Tab.Navigator>
         </NavigationContainer>
     );
